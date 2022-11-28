@@ -10,10 +10,10 @@ func TestSoma(t *testing.T) {
 		t.Errorf("Resultado da some é inválido: Resultado %d. Esperado: %d", total, 30)
 	}
 
-	total := multiply(3, 3)
+	totalMultiply := multiply(3, 3)
 
-	if total != 9 {
-		t.Errorf("Resultado da multiplicacao é inválido: Resultado %d. Esperado: %d", total, 9)
+	if totalMultiply != 9 {
+		t.Errorf("Resultado da multiplicacao é inválido: Resultado %d. Esperado: %d", totalMultiply, 9)
 	}
 
 }
