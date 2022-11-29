@@ -22,4 +22,12 @@ unzip sonar-scanner-cli-4.7.0.2747-linux.zip
 
 export PATH=$PATH:~/sonar-scanner-4.7.0.2747-linux/bin
 
+
+docker run -d --name sonarqube -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -p 9000:9000 sonarqube:latest
+
 sonar-scanner -Dsonar.projectKey=go-project3
+
+adm/security/force user authenticatiom = false
+
+cd js
+sonar-scanner -Dsonar.projectKey=js-project
