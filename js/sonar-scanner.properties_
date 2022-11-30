@@ -1,0 +1,23 @@
+# must be unique in a given SonarQube instance
+sonar.projectKey=js-project
+
+# --- optional properties ---
+
+# defaults to project key
+#sonar.projectName=GoProject
+# defaults to 'not provided'
+sonar.projectVersion=1.0
+ 
+# Path is relative to the sonar-project.properties file. Defaults to .
+sonar.sources=src
+sonar.exclusions=src/*.test.js
+
+# Encoding of the source code. Default is default system encoding
+sonar.sourceEncoding=UTF-8
+
+sonar.tests=src
+sonar.test.inclusions=src/*.test.js
+sonar.host.url=http://localhost:9000
+sonar.login=sqp_4efa71cd493d59eb3cc8faf17ef8d679df659922
+sonar.javascript.coveragePlugin=lcov
+sonar.javascript.lcov.reportPaths=coverage/lcov.info
